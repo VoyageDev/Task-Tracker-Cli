@@ -1,21 +1,34 @@
-# Task-Tracker-Cli
-Track your daily task throught CLI
+<div align="center">
+<h1>Task Tracker CLI</h1>
+<p>Sebuah aplikasi baris perintah (CLI) sederhana untuk melacak tugas harian Anda langsung dari terminal.</p>
+<p>
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Node.js-18.x-green.svg" alt="Node.js Version">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/platform-Linux%2520%257C%2520Windows%2520%257C%2520WSL-blue.svg" alt="Platform">
+<img src="https://www.google.com/search?q=https://img.shields.io/github/license/VoyageDev/Task-Tracker-Cli%3Fstyle%3Dflat" alt="License">
+</p>
+</div>
 
 ✨ Fitur
-Mode Interaktif: Jalankan aplikasi tanpa perintah untuk mendapatkan menu yang mudah digunakan.
+🚀 Mode Interaktif: Jalankan aplikasi tanpa perintah untuk mendapatkan menu yang mudah digunakan.
 
-Manajemen Tugas: Tambah, lihat, selesaikan, dan hapus tugas dengan mudah.
+📋 Manajemen Tugas: Tambah, lihat, selesaikan, dan hapus tugas dengan mudah.
 
-Penyimpanan Persisten: Semua tugas Anda disimpan dalam file db.json lokal.
+💾 Penyimpanan Persisten: Semua tugas Anda disimpan dalam file db.json lokal.
 
-Antarmuka Berwarna: Tampilan yang mudah dibaca berkat teks berwarna untuk status tugas.
+🎨 Antarmuka Berwarna: Tampilan yang mudah dibaca berkat teks berwarna untuk status tugas.
 
 ⚙️ Instalasi
 Pastikan Anda memiliki Node.js (disarankan versi LTS) dan npm terinstal di sistem Anda.
 
-Untuk Linux / WSL (Direkomendasikan)
+<details>
+<summary><strong>🐧 Untuk Linux / WSL (Direkomendasikan)</strong></summary>
+<br>
+
 Clone Repository
 Buka terminal Anda, lalu clone repository ini dan masuk ke direktorinya:
+
+git clone [https://github.com/VoyageDev/Task-Tracker-Cli.git](https://github.com/VoyageDev/Task-Tracker-Cli.git)
+cd Task-Tracker-Cli
 
 Instal Dependensi
 Dari dalam direktori proyek, jalankan:
@@ -23,13 +36,21 @@ Dari dalam direktori proyek, jalankan:
 npm install
 
 Buat Perintah Global
-Untuk dapat menjalankan perintah task dari direktori mana pun, buat symbolic link. Anda mungkin memerlukan sudo untuk izin sistem.
+Untuk dapat menjalankan perintah task dari direktori mana pun, buat symbolic link.
 
 sudo npm link
 
-Untuk Windows (Native)
+</details>
+
+<details>
+<summary><strong>💻 Untuk Windows (Native)</strong></summary>
+<br>
+
 Clone Repository
 Buka PowerShell atau CMD, lalu clone repository ini dan masuk ke direktorinya:
+
+git clone [https://github.com/VoyageDev/Task-Tracker-Cli.git](https://github.com/VoyageDev/Task-Tracker-Cli.git)
+cd Task-Tracker-Cli
 
 Instal Dependensi
 Dari dalam direktori proyek, jalankan:
@@ -47,6 +68,8 @@ Jalankan perintah berikut:
 
 npm link
 
+</details>
+
 🚀 Penggunaan
 Setelah instalasi selesai, penggunaan aplikasi ini sama untuk semua platform.
 
@@ -55,37 +78,49 @@ Cukup jalankan perintah task tanpa argumen apa pun untuk menampilkan menu utama.
 
 task
 
-Anda akan disajikan pilihan untuk:
+Aplikasi akan menampilkan menu pilihan seperti di bawah ini:
 
-Melihat semua tugas
-
-Menambah tugas baru
-
-Menyelesaikan sebuah tugas
-
-Menghapus sebuah tugas
-
-Keluar
+? What do you want to do? (Use arrow keys)
+❯ List all tasks
+  Add a new task
+  Complete a task
+  Remove a task
+  ──────────────
+  Exit
 
 Perintah Langsung
 Anda juga bisa menjalankan fungsi spesifik secara langsung dari terminal.
 
-Melihat Daftar Tugas
-Menampilkan semua tugas beserta statusnya (✔ untuk selesai, ✖ untuk belum selesai).
+Perintah
+
+Deskripsi
 
 task list
 
-Menambah Tugas Baru
-Memulai prompt untuk memasukkan nama tugas baru Anda.
+Menampilkan semua tugas beserta statusnya.
 
 task add
 
-Menyelesaikan Tugas
-Menampilkan daftar tugas yang belum selesai dan meminta Anda memilih mana yang akan ditandai sebagai selesai.
+Memulai prompt untuk memasukkan nama tugas baru.
 
 task complete
 
-Menghapus Tugas
-Menampilkan semua tugas dan meminta Anda memilih mana yang akan dihapus.
+Meminta Anda memilih tugas mana yang akan ditandai selesai.
 
 task remove
+
+Meminta Anda memilih tugas mana yang akan dihapus.
+
+🛠️ Teknologi yang Digunakan
+Node.js
+
+Commander.js - Kerangka kerja untuk aplikasi CLI.
+
+Inquirer.js - Untuk prompt interaktif.
+
+Chalk - Untuk memberi warna pada teks terminal.
+
+Lowdb - Database JSON sederhana berbasis file.
+
+📜 Lisensi
+Proyek ini dilisensikan di bawah Lisensi MIT.
